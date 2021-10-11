@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 700px;
+    width: 70%;
+    margin: auto;
+    
+}
+
+.banner{
+    height: 300px;
+    background-color: blue;
+    position: relative;
+    overflow: hidden; /* questo comando nasconde dalla visualizzazione il contenuto che sborda dal contenitore */
+    border-radius: 10px;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0,0, 0.2);
+    /* il border radius va dato anche ai figli oppure border-radius: inherit a tutti i figli
+    la soluzione migliore è l'overlay hidden */
+}
+
+img{
+    width: 100%;
+}
+
+.immagine img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* questo metodo fa si che l'immagine sia nel suo box mantenendo le sue proporzioni, se però l'immagine sborda dal contenuto, verrà ritagliata */
+}
+
+.banner2{
+    background-image: url(http://www.hwupgrade.it/i/n/windows11_leak_720.jpg);
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* se utilizzo il metodo col background-img devo dare
+    background-repeat: no repeat;
+    background-position: center;
+    background-size: cover; */
+}
+
+.immagine{
+    border-radius: 10px;
+    overflow: hidden;
+    height: 500px;
+}
